@@ -1,0 +1,12 @@
+[Event "Local validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Ekal Chess"]
+[Black "random"]
+[Result "1-0"]
+[TimeControl "180+2"]
+[Termination "CHECKMATE"]
+[Mode "official-clock"]
+
+1. Nf3 h6 2. Nc3 f5 3. Nh4 Rh7 4. e4 Na6 5. Qh5+ g6 6. Qxg6+ Rf7 7. Bxa6 e5 8. Bc4 fxe4 9. Qxf7# 1-0

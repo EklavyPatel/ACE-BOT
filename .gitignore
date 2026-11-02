@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+config.yml
+*.log
+output/
+
+# Private bridge backups and credentials
+config.yml.*
+*.token
+.env.*
+*.pem
+*.key

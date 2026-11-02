@@ -1,0 +1,27 @@
+test_final_stage_exact_time_control (test_config.ConfigTests.test_final_stage_exact_time_control) ... ok
+test_resources_disabled_and_challengers_restricted (test_config.ConfigTests.test_resources_disabled_and_challengers_restricted) ... ok
+test_colour_mirror (test_engine.EvaluationTests.test_colour_mirror) ... ok
+test_starting_position_is_balanced (test_engine.EvaluationTests.test_starting_position_is_balanced) ... ok
+test_abort_preserves_entire_board (test_engine.SearchTests.test_abort_preserves_entire_board) ... ok
+test_alpha_beta_agrees_with_exhaustive_search (test_engine.SearchTests.test_alpha_beta_agrees_with_exhaustive_search) ... ok
+test_free_queen_capture_for_both_colours (test_engine.SearchTests.test_free_queen_capture_for_both_colours) ... ok
+test_mates_for_both_colours (test_engine.SearchTests.test_mates_for_both_colours) ... ok
+test_quiescence_searches_quiet_check_evasions (test_engine.SearchTests.test_quiescence_searches_quiet_check_evasions) ... ok
+test_terminal_and_mate_precedes_fifty_move_draw (test_engine.SearchTests.test_terminal_and_mate_precedes_fifty_move_draw) ... ok
+test_threefold_history_and_fifty_move (test_engine.SearchTests.test_threefold_history_and_fifty_move) ... ok
+test_zero_budget_and_cancelled_fallback (test_engine.SearchTests.test_zero_budget_and_cancelled_fallback) ... ok
+test_clock_budget_uses_correct_side_and_increment (test_engine.TimeTests.test_clock_budget_uses_correct_side_and_increment) ... ok
+test_small_clocks_and_explicit_movetime (test_engine.TimeTests.test_small_clocks_and_explicit_movetime) ... ok
+test_position_parser_is_atomic (test_engine.UCITests.test_position_parser_is_atomic) ... ok
+test_raw_protocol_stop_readiness_terminal_and_stdout (test_engine.UCITests.test_raw_protocol_stop_readiness_terminal_and_stdout) ... ok
+test_real_client_legal_special_moves_and_newgame (test_engine.UCITests.test_real_client_legal_special_moves_and_newgame) ... ok
+test_cached_position_does_not_override_draw_history (test_review.ReviewTests.test_cached_position_does_not_override_draw_history) ... ok
+test_poisoned_rook_not_taken_by_queen (test_review.ReviewTests.test_poisoned_rook_not_taken_by_queen) ... ok
+test_quiet_promotion_in_quiescence (test_review.ReviewTests.test_quiet_promotion_in_quiescence) ... ok
+test_stalemate_before_static_cache (test_review.ReviewTests.test_stalemate_before_static_cache) ... ok
+test_static_cache_reuses_only_formula (test_review.ReviewTests.test_static_cache_reuses_only_formula) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.514s
+
+OK

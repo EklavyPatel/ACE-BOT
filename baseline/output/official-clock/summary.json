@@ -1,0 +1,22 @@
+[
+  {
+    "game": 1,
+    "baseline": "random",
+    "bot_colour": "white",
+    "result": "1-0",
+    "termination": "CHECKMATE",
+    "plies": 17,
+    "max_move_seconds": 10.3148,
+    "mode": "official-clock"
+  },
+  {
+    "game": 2,
+    "baseline": "random",
+    "bot_colour": "black",
+    "result": "0-1",
+    "termination": "CHECKMATE",
+    "plies": 16,
+    "max_move_seconds": 10.3126,
+    "mode": "official-clock"
+  }
+]

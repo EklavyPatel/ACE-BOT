@@ -1,0 +1,12 @@
+[Event "Local validation"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Ekal Chess"]
+[Black "greedy"]
+[Result "1-0"]
+[TimeControl "180+2"]
+[Termination "CHECKMATE"]
+[Mode "accelerated-move-cap"]
+
+1. Nf3 f6 2. Nc3 g6 3. Nd5 Kf7 4. Nd4 g5 5. e4 Nc6 6. Qh5+ Kg7 7. Nf5# 1-0

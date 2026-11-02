@@ -1,0 +1,24 @@
+EKAL CHESS - QUICK START (UBUNTU)
+
+1. Extract the ZIP. Open a terminal inside the extracted ACE-BOT folder.
+2. Run: bash setup.sh
+3. Run: .venv/bin/python -m unittest discover -s tests -v
+4. Play: .venv/bin/python play.py
+
+Enter moves such as e4 or e2e4. Type quit to exit.
+To play Black: .venv/bin/python play.py --black
+
+Tournament engine command: ./engine/run.sh
+Lichess instructions: LICHESS_SETUP.md
+How the algorithms work: LEARN_THE_ENGINE.md
+Full documentation and authorship disclosure: README.md
+Recorded checks and game results: VALIDATION.md
+
+Before submitting, ask the organisers whether AI-assisted core code meets their
+own-work rule. The project explicitly discloses Codex assistance.
+
+No GPU, model training, API key, or database is needed for local play.
+
+REVIEWED REVISION: read REVIEW.md. Original source is under baseline/.
+
+Submission name: ACE-BOT. Bot: EklaVyPaTeL1. Current details are in README.md.

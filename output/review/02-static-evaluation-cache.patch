@@ -1,0 +1,49 @@
+--- before/source/search.py
++++ after/source/search.py
+@@ -60,6 +60,17 @@
+         self.table = {}
+         self.history = Counter()
+         self.killers = {}
++        self.eval_cache = {}
++
++    def static_eval(self, board):
++        # Only cache the static formula. Terminal/draw scores depend on history
++        # and are handled before this call. Include turn/castling/en-passant.
++        key = position_key(board)
++        if key not in self.eval_cache:
++            if len(self.eval_cache) >= 16000:
++                self.eval_cache.clear()
++            self.eval_cache[key] = evaluate(board)
++        return self.eval_cache[key]
+ 
+     def visit(self):
+         if self.stop.is_set() or (self.deadline is not None and time.perf_counter() >= self.deadline):
+@@ -116,9 +127,9 @@
+         if self.drawn(board):
+             return 0
+         if ply >= MAX_PLY:
+-            return evaluate(board)
++            return self.static_eval(board)
+         if not checked:
+-            stand = evaluate(board)
++            stand = self.static_eval(board)
+             if stand >= beta:
+                 return stand
+             alpha = max(alpha, stand)
+@@ -152,7 +163,7 @@
+         if self.drawn(board):
+             return 0
+         if ply >= MAX_PLY:
+-            return evaluate(board)
++            return self.static_eval(board)
+         key = self.context_key(board)
+         entry = self.table.get(key)
+         preferred = entry.move if entry else None
+@@ -207,6 +218,7 @@
+         self.table.clear()
+         self.history.clear()
+         self.killers.clear()
++        self.eval_cache.clear()
+         self.repetitions = Counter()
+         past = board.copy(stack=True)
+         self.repetitions[position_key(past)] += 1

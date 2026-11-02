@@ -1,0 +1,10 @@
+[Event "Paired local review"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "original"]
+[Black "candidate"]
+[Result "0-1"]
+[Termination "CHECKMATE"]
+
+1. d4 d5 2. c4 e6 3. Nd2 Bb4 4. a3 Bxd2+ 5. Bxd2 dxc4 6. Nf3 Nc6 7. Qa4 Qd5 8. Ne5 b5 9. Qc2 Nxd4 10. Qc3 Qxe5 11. O-O-O Nf6 12. Qb4 c5 13. f4 cxb4 14. fxe5 Nb3+ 15. Kc2 Nxd2 16. exf6 Nxf1 17. Rhxf1 gxf6 18. axb4 Bb7 19. Rxf6 Bxg2 20. Kc1 Rg8 21. h4 Be4 22. h5 Rg2 23. Rdf1 Bf5 24. e4 Ke7 25. e5 Rd8 26. Rf3 Rg1+ 27. Rf1 Rxf1# 0-1

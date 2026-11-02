@@ -1,0 +1,27 @@
+--- before/source/search.py
++++ after/source/search.py
+@@ -109,9 +109,9 @@
+ 
+     def quiescence(self, board, alpha, beta, ply, qdepth=0):
+         self.visit()
+-        moves = list(board.legal_moves)
+         checked = board.is_check()
+-        if not moves:
++        moves = list(board.legal_moves) if checked else None
++        if (checked and not moves) or (not checked and next(board.generate_legal_moves(), None) is None):
+             return -MATE + ply if checked else 0
+         if self.drawn(board):
+             return 0
+@@ -126,7 +126,11 @@
+                 return alpha
+             # Include quiet promotions. When in check, search EVERY legal evasion
+             # and never use stand-pat as though passing a turn were allowed.
+-            moves = [m for m in moves if board.is_capture(m) or m.promotion]
++            moves = list(board.generate_legal_captures())
++            promotion_rank = chess.BB_RANK_8 if board.turn else chess.BB_RANK_1
++            moves.extend(board.generate_legal_moves(
++                from_mask=board.pawns & board.occupied_co[board.turn],
++                to_mask=promotion_rank & ~board.occupied))
+         for move in self.ordered(board, moves, ply=ply):
+             self.push(board, move)
+             try:

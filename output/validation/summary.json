@@ -1,0 +1,42 @@
+[
+  {
+    "game": 1,
+    "baseline": "random",
+    "bot_colour": "white",
+    "result": "1-0",
+    "termination": "CHECKMATE",
+    "plies": 31,
+    "max_move_seconds": 0.091,
+    "mode": "accelerated-move-cap"
+  },
+  {
+    "game": 2,
+    "baseline": "random",
+    "bot_colour": "black",
+    "result": "0-1",
+    "termination": "CHECKMATE",
+    "plies": 70,
+    "max_move_seconds": 0.0951,
+    "mode": "accelerated-move-cap"
+  },
+  {
+    "game": 3,
+    "baseline": "greedy",
+    "bot_colour": "white",
+    "result": "1-0",
+    "termination": "CHECKMATE",
+    "plies": 13,
+    "max_move_seconds": 0.0875,
+    "mode": "accelerated-move-cap"
+  },
+  {
+    "game": 4,
+    "baseline": "greedy",
+    "bot_colour": "black",
+    "result": "0-1",
+    "termination": "CHECKMATE",
+    "plies": 28,
+    "max_move_seconds": 0.0872,
+    "mode": "accelerated-move-cap"
+  }
+]
